@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <script>
+        function registerUser() {
+            let username = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            fetch("http://127.0.0.1:8000/api/accounts/register/", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ username, email, password })
+            }).then(response => response.json())
+            .then(data => alert(data.message));
+        }
+    </script>
+</head>
+<body>
+    <h2>Register</h2>
+    <input type="text" id="username" placeholder="Username"><br>
+    <input type="email" id="email" placeholder="Email"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button onclick="registerUser()">Register</button>
+</body>
+</html>
