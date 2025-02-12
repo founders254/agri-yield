@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'rest_framework', 
     'corsheaders',
     'accounts',
-    'crops',
+    'crop_recommendation',
 
 ]
 

@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class CropsConfig(AppConfig):
+class CropRecommendationConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'crops'
+    name = 'crop_recommendation'
