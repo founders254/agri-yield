@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'rest_framework', 
     'corsheaders',
     'accounts',
-    'crop_recommendation',
-
+    'cropRecommendation',
+    
 ]
 
 MIDDLEWARE = [
